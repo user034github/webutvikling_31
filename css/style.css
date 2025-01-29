@@ -19,8 +19,21 @@ footer {
     padding: 1em;
 }
 
+footer li {
+     list-style-type: none;
+}
+
+.flagg img {
+     width: 2.5em;
+}
+
+
 i.fa-brands {
     font-size: 2em;
+}
+
+i.fa-solid {
+     color: black;
 }
 
 nav {
@@ -52,12 +65,12 @@ nav a {
 }
 
 .navigation_links {
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     list-style: none;
-     padding: 0;
-     width: 200px;
-     gap: 0.25em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    padding: 0;
+    width: 200px;
+    gap: 0.25em;
 }
 
 .btn {
