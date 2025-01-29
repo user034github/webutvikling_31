@@ -48,7 +48,29 @@ nav .logo img {
 
 nav a {
     font-size: 0.7em;
-	margin-right: 1em;
+    margin-right: 1em;
+}
+
+.navigation_links {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     list-style: none;
+     padding: 0;
+     width: 200px;
+     gap: 0.25em;
+}
+
+.btn {
+    display: inline-flex;
+    width: 7em;
+    height: 3em;
+    background-color: #1ca2c1;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 600px) {
