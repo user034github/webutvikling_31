@@ -19,21 +19,65 @@ footer {
     padding: 1em;
 }
 
+footer > section {
+    padding: 0.1em;
+}
+
 footer li {
-     list-style-type: none;
+    list-style-type: none;
 }
 
-.flagg img {
-     width: 2.5em;
+.flags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    row-gap: 1em;
 }
 
+.flags li {
+    display: flex;
+    padding-right: 1em;
+    align-items: center;
+    gap: 1em;
+}
+
+.flags img {
+    width: 2.5em;
+}
+
+.payment-methods-list {
+    display: flex;
+    gap: 0.9em;
+    padding: 0;
+}
+
+.customer-service-list {
+    padding: 0;
+}
+
+.customer-service-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media-list {
+    display: flex;
+    gap: 0.9em;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    gap: 2em;
+}
 
 i.fa-brands {
     font-size: 2em;
 }
 
 i.fa-solid {
-     color: black;
+    color: black;
 }
 
 nav {
@@ -64,7 +108,7 @@ nav a {
     margin-right: 1em;
 }
 
-.navigation_links {
+.navigation-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     list-style: none;
