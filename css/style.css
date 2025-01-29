@@ -20,13 +20,13 @@ nav {
     justify-content: space-between;
 }
 
-.left-global-header {
+.left-global-nav {
     display: flex;
     list-style-type: none;
     padding: 0;
 }
 
-.right-global-header {
+.right-global-nav {
     display: flex;
     list-style-type: none;
     font-size: 1.5em;
