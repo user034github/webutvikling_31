@@ -1,5 +1,12 @@
 body {
+    width: 100%;
+    max-width: 1400px;
     font-family: "Montserrat", serif;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
 }
 
 h1, h2, h3 {
@@ -9,6 +16,7 @@ h1, h2, h3 {
 footer {
     background-color: #252525;
     color: white;
+    padding: 1em;
 }
 
 i.fa-brands {
