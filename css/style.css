@@ -1,0 +1,16 @@
+body {
+    font-family: "Montserrat", serif;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", serif;
+}
+
+footer {
+    background-color: #252525;
+    color: white;
+}
+
+i.fa-brands {
+     font-size: 2em;
+}
