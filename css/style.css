@@ -53,23 +53,23 @@ footer li {
 }
 
 .customer-service-list {
-    padding: 0;
+     padding: 0;
 }
 
 .customer-service-list li a {
-    color: white;
-    text-decoration: none;
+     color: white;
+     text-decoration: none;
 }
 
 .social-media-list {
-    display: flex;
-    gap: 0.9em;
-    padding: 0;
+     display: flex;
+     gap: 0.9em;
+     padding: 0;
 }
 
 .container {
-    display: flex;
-    gap: 2em;
+     display: flex;
+     gap: 2em;
 }
 
 i.fa-brands {
@@ -77,7 +77,7 @@ i.fa-brands {
 }
 
 i.fa-solid {
-    color: black;
+     color: black;
 }
 
 nav {
@@ -115,6 +115,28 @@ nav a {
     padding: 0;
     width: 200px;
     gap: 0.25em;
+}
+
+fieldset {
+    border-color: white;
+    padding: 1.5em 0.9em;
+}
+
+.sign-up {
+    display: flex;
+    gap: 0.2em;
+    input[type="submit"] {
+	height: 2.2em;
+        font-weight: 900;
+        border: none;
+        border-radius: 0.4em;
+        background-color: #ffcf40;
+    }
+    input[type="email"] {
+        border: none;
+        border-radius: 0.4em;
+        padding-left: 0.5em;
+    }
 }
 
 .btn {
