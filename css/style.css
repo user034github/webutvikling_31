@@ -14,9 +14,11 @@ h1, h2, h3 {
 }
 
 footer {
+    width: 100%;
     background-color: #252525;
     color: white;
     padding: 2em;
+    box-sizing: border-box;
 }
 
 footer > section {
@@ -69,6 +71,7 @@ footer li {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     gap: 2em;
 }
 
@@ -117,7 +120,6 @@ nav a {
     grid-template-columns: repeat(2, 1fr);
     list-style: none;
     padding: 0;
-    width: 200px;
     gap: 0.25em;
 }
 
@@ -156,10 +158,24 @@ fieldset {
     overflow: hidden;
 }
 
-@media screen and (min-width: 600px) {
-
+@media screen and (min-width: 526px) {
+    .navigation-links {
+        display: inline-flex;
+    }
 }
 
-@media screen and (min-width: 1024px) {
-
+@media screen and (min-width: 854px) {
+    .footer-screen-size-layer-2 {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 0;
+        gap: 2em;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .container {
+        flex: 1;
+        gap: 0;
+        justify-content: space-evenly;
+    }    
 }
