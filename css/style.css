@@ -12,6 +12,7 @@ header {
 }
 
 nav {
+    width: 100%;
     grid-row: 1/2;
     flex: 1;
     display: flex;
@@ -45,6 +46,35 @@ nav {
     width: 90%;
 }
 
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9em;
+}
+
+.search-form button {
+    height: 3.5em;
+    width: 100%;
+    font-weight: 900;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.4em;
+    background-color: #ffcf40;
+    align-self: flex-end;
+}
+
+.search-form fieldset {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+
+.search-form select, input {
+    width: 100%;
+    border: none;
+}
+
 .scroll-items {
     display: flex;
     gap: 1.5em;
@@ -59,11 +89,6 @@ nav {
 }
 
 .scroll-right-arrow {
-    border: none;
-    background: none;
-}
-
-.scroll-left-arrow {
     border: none;
     background: none;
 }
@@ -86,38 +111,19 @@ nav {
     padding-right: 0.5em;	
 }
 
-.search-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.9em;
-}
-
-.search-form button {
-	height: 3.5em;
-        width: 100%;
-        font-weight: 900;
-        font-size: 1em;
-        border: none;
-        border-radius: 0.4em;
-        background-color: #ffcf40;
-        align-self: flex-end;
-}
-
-.search-form fieldset {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0.5em;
-}
-
-.search-form select, input {
-    width: 100%;
-    border: none;
-}
-
 main {
     width: 100%;
     max-width: 1000px;
+}
+
+.campaign img {
+    background-size: cover;
+    background-position: center;
+    width: 43em;
+    height: 25em;
+    align-self: center;
+    border-radius: 1em;
+    margin-top: 2em;
 }
 
 h1, h2, h3 {
@@ -265,6 +271,10 @@ fieldset {
     }
 }
 
+.flags-section {
+    width: 100%;
+}
+
 @media screen and (min-width: 526px) {
     .navigation-links {
         display: inline-flex;
@@ -335,6 +345,17 @@ fieldset {
     }
 }
 
-@media screen and (min-width: 1024px) {
-
+@media screen and (min-width: 1053px) {
+    .scroll-right-arrow {
+        display: none;
+    }
+    .search {
+    	height: 5.5em;
+    }
+    .search-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.9em;
+    }
 }
