@@ -27,9 +27,51 @@ nav {
 }
 
 .search {
+    display: flex;
+    flex-direction: column;
     border: 1px solid lightgray;
     border-radius: 0.4em;
+    background-color: white;
+    margin-top: -7.5em;
+    margin-left: 1.8em;
+    margin-right: 1.8em;
     padding: 1.5em 1em;
+    gap: 1em;
+}
+
+.scroll-items {
+    display: flex;
+    gap: 1.5em;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.scroll-section {
+    display: flex;
+    align-items: center;
+}
+
+.scroll-right-arrow {
+    border: none;
+    background: none;
+}
+
+.scroll-left-arrow {
+    border: none;
+    background: none;
+}
+
+.scroll-items a {
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    font-size: 1.2em;
+}
+
+.scroll-items a i.fa-solid {
+    font-size: 1em;
+    padding-right: 0.5em;	
 }
 
 .search-form {
@@ -232,7 +274,7 @@ fieldset {
         justify-content: space-evenly;
     }    
     .navigation-links li a {
-	display: block;
+	    display: block;
         text-decoration: none;
         color: black;
         font-weight: bold;
@@ -250,14 +292,14 @@ fieldset {
     }
     nav {
         display: block;
-	justify-content: space-between;
+	    justify-content: space-between;
     }
     .text-nav {
     	display: flex;
     	justify-content: flex-end;
     	list-style-type: none;
     	font-size: 1.5em;
-	align-items: center;
+	    align-items: center;
     	padding: 0;
     }
     .text-nav li a {
@@ -272,7 +314,7 @@ fieldset {
     }
     .text-nav li a {
         color: #027792;
-	font-weight: bold;
+	    font-weight: bold;
         padding: 0.5em;
     }
     .text-nav li a i.fa-regular {
