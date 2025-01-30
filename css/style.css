@@ -5,15 +5,14 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    height: 20em;
-    background-image: url('../bilder/sea-4768869_1920.jpg');
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 5em 5em auto;
+    grid-template-columns: 1fr;
 }
 
 nav {
+    grid-row: 1/2;
     flex: 1;
     display: flex;
     flex-direction: row-reverse;
@@ -21,22 +20,29 @@ nav {
     background-color: white;
 }
 
-.header-content {
-    flex: 1;
-    display: flex;
+.banner {
+    width: 100%;
+    grid-row: 2/4;
+    background-image: url('../bilder/sea-4768869_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 1;
 }
 
 .search {
+    grid-row: 3/5;
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
     border: 1px solid lightgray;
     border-radius: 0.4em;
     background-color: white;
-    margin-top: -7.5em;
-    margin-left: 1.8em;
-    margin-right: 1.8em;
     padding: 1.5em 1em;
     gap: 1em;
+    grid-column: 1;
+    height: 28.5em;
+    justify-self: center;
+    width: 90%;
 }
 
 .scroll-items {
@@ -67,6 +73,12 @@ nav {
     color: black;
     font-weight: 550;
     font-size: 1.2em;
+}
+
+.scroll-items a:first-of-type {
+    text-decoration: underline;
+    text-decoration-color: #1ca2c1;
+    text-decoration-thickness: 0.2em;
 }
 
 .scroll-items a i.fa-solid {
@@ -121,61 +133,61 @@ footer {
 }
 
 footer > section {
-    padding: 0.1em;
+     padding: 0.1em;
 }
 
 footer li {
-    list-style-type: none;
+     list-style-type: none;
 }
 
 .flags {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    justify-content: center;
-    row-gap: 1em;
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0;
+     justify-content: center;
+     row-gap: 1em;
 }
 
 .flags li {
-    display: flex;
-    padding-right: 1em;
-    align-items: center;
-    gap: 1em;
+     display: flex;
+     padding-right: 1em;
+     align-items: center;
+     gap: 1em;
 }
 
 .flags img {
-    width: 2.5em;
+     width: 2.5em;
 }
 
 .logo {
-    font-size: 1.5em;
+     font-size: 1.5em;
 }
 
 .payment-methods-list {
-    display: flex;
-    gap: 0.9em;
-    padding: 0;
+     display: flex;
+     gap: 0.9em;
+     padding: 0;
 }
 
 .customer-service-list {
-    padding: 0;
+     padding: 0;
 }
 
 .customer-service-list li a {
-    color: white;
-    text-decoration: none;
+     color: white;
+     text-decoration: none;
 }
 
 .social-media-list {
-    display: flex;
-    gap: 0.9em;
-    padding: 0;
+     display: flex;
+     gap: 0.9em;
+     padding: 0;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2em;
 }
 
 .logo-menu-nav {
@@ -188,7 +200,7 @@ footer li {
 }
 
 h4.normal {
-    font-weight: normal;
+     font-weight: normal;
 }
 
 i.fa-brands {
@@ -196,8 +208,8 @@ i.fa-brands {
 }
 
 i.fa-solid {
-    color: black;
-    font-size: 2.5em;
+     color: black;
+     font-size: 2.5em;
 }
 
 .icons-nav {
@@ -274,7 +286,7 @@ fieldset {
         justify-content: space-evenly;
     }    
     .navigation-links li a {
-	    display: block;
+	display: block;
         text-decoration: none;
         color: black;
         font-weight: bold;
@@ -292,14 +304,14 @@ fieldset {
     }
     nav {
         display: block;
-	    justify-content: space-between;
+	justify-content: space-between;
     }
     .text-nav {
     	display: flex;
     	justify-content: flex-end;
     	list-style-type: none;
     	font-size: 1.5em;
-	    align-items: center;
+	align-items: center;
     	padding: 0;
     }
     .text-nav li a {
@@ -314,7 +326,7 @@ fieldset {
     }
     .text-nav li a {
         color: #027792;
-	    font-weight: bold;
+	font-weight: bold;
         padding: 0.5em;
     }
     .text-nav li a i.fa-regular {
