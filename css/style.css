@@ -1,5 +1,9 @@
 body {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
     max-width: 1400px;
     font-family: "Montserrat", serif;
 }
@@ -112,18 +116,52 @@ nav {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
     width: 100%;
     max-width: 1000px;
 }
 
+.campaign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .campaign img {
-    background-size: cover;
-    background-position: center;
-    width: 43em;
-    height: 25em;
-    align-self: center;
+    width: 100%;
     border-radius: 1em;
-    margin-top: 2em;
+}
+
+.offers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.offers article {
+    border: 1px solid lightgray;
+}
+
+.article-cards-tips-inspiration {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.article-cards-tips-inspiration h4 {
+    align-self: flex-start;
+    font-size: 2.5em;
+}
+
+.article-cards-tips-inspiration img {
+    width: 55em;
+    border-radius: 1em;
 }
 
 h1, h2, h3 {
