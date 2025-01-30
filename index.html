@@ -25,7 +25,7 @@
                 </ul>
                 <ul class="logo-menu-nav">
                     <li class="logo"><a href="index.html"><img src="bilder/fav.png"></a></li>
-                    <ul class="navigation-links">
+                    <ul class="navigation-links">   
                         <li><a href="index.html#tips-og-inspirasjon">Tips og inspirasjon</a></li>
                         <li><a href="hotell.html">Hotell</a></li>
                         <li><a href="https://www.norwegian.no" target="_blanks">Fly</a></li>
@@ -37,6 +37,50 @@
             </div>
         </header>
         <main>
+            <p>Lorem ipsum</p>
+            <section class="search">
+                <div class="scroll">
+
+                </div>
+                <form class="search-form">
+                    <fieldset>
+                        <legend>Fra</legend>
+                        <select id="til" placeholder="Oslo Lufthavn">
+                            <option value="avreisested-1">Oslo Lufthavn</option>
+                            <option value="avreisested-2">Torp Sandefjord Lufthavn</option>
+                            <option value="avreisested-3">Bergen Lufthavn</option>
+                            <option value="avreisested-4">Alta Lufthavn</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Fra</legend>
+                        <select id="fra" placeholder="Albania">
+                            <option value="destinasjon-1">Albania</option>
+                            <option value="destinasjon-2">Danmark</option>
+                            <option value="destinasjon-3">Finland</option>
+                            <option value="destinasjon-4">Hellas</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Reiselengde</legend>
+                        <select id="reiselengde" placeholder="Mindre enn 1 uke">
+                            <option value="reiselengde-1">Mindre enn 1 uke</option>
+                            <option value="reiselengde-2">1 Uke</option>
+                            <option value="reiselengde-3">2 Uker</option>
+                            <option value="reiselengde-4">Mer enn 2 uker</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Velg dato</legend>
+                        <input type="date" id="velg-dato" placeholder="mm/dd/yyyy">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Antall reisende</legend>
+                        <input type="number" id="antall-reisende" min="1" max="10" step="1" value="2">
+                    </fieldset>
+                    <button type="submit">Søk</button>
+                </form>
+            </section>
             <p>Lorem ipsum</p>
         </main>
         <footer>

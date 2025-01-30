@@ -26,6 +26,41 @@ nav {
     display: flex;
 }
 
+.search {
+    border: 1px solid lightgray;
+    border-radius: 0.4em;
+    padding: 1.5em 1em;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9em;
+}
+
+.search-form button {
+	height: 3.5em;
+        width: 100%;
+        font-weight: 900;
+        font-size: 1em;
+        border: none;
+        border-radius: 0.4em;
+        background-color: #ffcf40;
+        align-self: flex-end;
+}
+
+.search-form fieldset {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+
+.search-form select, input {
+    width: 100%;
+    border: none;
+}
+
 main {
     width: 100%;
     max-width: 1000px;
@@ -111,7 +146,7 @@ footer li {
 }
 
 h4.normal {
-     font-weight: normal;
+    font-weight: normal;
 }
 
 i.fa-brands {
@@ -119,8 +154,8 @@ i.fa-brands {
 }
 
 i.fa-solid {
-     color: black;
-     font-size: 2.5em;
+    color: black;
+    font-size: 2.5em;
 }
 
 .icons-nav {
@@ -197,7 +232,7 @@ fieldset {
         justify-content: space-evenly;
     }    
     .navigation-links li a {
-	    display: block;
+	display: block;
         text-decoration: none;
         color: black;
         font-weight: bold;
@@ -215,15 +250,14 @@ fieldset {
     }
     nav {
         display: block;
-	    justify-content: space-between;
+	justify-content: space-between;
     }
-
     .text-nav {
     	display: flex;
     	justify-content: flex-end;
     	list-style-type: none;
     	font-size: 1.5em;
-	    align-items: center;
+	align-items: center;
     	padding: 0;
     }
     .text-nav li a {
