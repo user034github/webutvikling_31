@@ -1,5 +1,7 @@
 body {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     max-width: 1400px;
     font-family: "Montserrat", serif;
 }
@@ -7,10 +9,6 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    height: 20em;
-    background-image: url('../bilder/sea-4768869_1920.jpg');
-    background-size: cover;
-    background-position: center;
 }
 
 nav {
@@ -21,14 +19,28 @@ nav {
     background-color: white;
 }
 
-.header-content {
-    flex: 1;
-    display: flex;
-}
-
 main {
     width: 100%;
     max-width: 1000px;
+    align-self: center;
+}
+
+.progress-bar {
+    display: flex;
+    background-color: #1ca2c1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.progress-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+.progress-bar i.fa-solid {
+    color: white;
 }
 
 h1, h2, h3 {
@@ -238,7 +250,7 @@ fieldset {
     }
     .text-nav li a {
         color: #027792;
-	font-weight: bold;
+	    font-weight: bold;
         padding: 0.5em;
     }
     .text-nav li a i.fa-regular {
