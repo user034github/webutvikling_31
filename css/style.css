@@ -4,6 +4,28 @@ body {
     font-family: "Montserrat", serif;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    height: 20em;
+    background-image: url('../bilder/sea-4768869_1920.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+}
+
 main {
     width: 100%;
     max-width: 1000px;
@@ -89,7 +111,7 @@ footer li {
 }
 
 h4.normal {
-    font-weight: normal;
+     font-weight: normal;
 }
 
 i.fa-brands {
@@ -97,14 +119,8 @@ i.fa-brands {
 }
 
 i.fa-solid {
-    color: black;
-    font-size: 2.5em;
-}
-
-nav {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+     color: black;
+     font-size: 2.5em;
 }
 
 .icons-nav {
@@ -181,7 +197,7 @@ fieldset {
         justify-content: space-evenly;
     }    
     .navigation-links li a {
-	display: block;
+	    display: block;
         text-decoration: none;
         color: black;
         font-weight: bold;
@@ -199,7 +215,7 @@ fieldset {
     }
     nav {
         display: block;
-	justify-content: space-between;
+	    justify-content: space-between;
     }
 
     .text-nav {
@@ -207,7 +223,7 @@ fieldset {
     	justify-content: flex-end;
     	list-style-type: none;
     	font-size: 1.5em;
-	align-items: center;
+	    align-items: center;
     	padding: 0;
     }
     .text-nav li a {
