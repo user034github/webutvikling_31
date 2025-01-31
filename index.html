@@ -77,11 +77,11 @@
                     </fieldset>
                     <fieldset>
                         <legend>Velg dato</legend>
-                        <input type="date" id="velg-dato" placeholder="mm/dd/yyyy">
+                        <input type="date" id="velg-dato" min="2025-01-31" placeholder="mm/dd/yyyy" required>
                     </fieldset>
                     <fieldset>
                         <legend>Antall reisende</legend>
-                        <input type="number" id="antall-reisende" min="1" max="10" step="1" value="2">
+                        <input type="number" id="antall-reisende" min="1" max="10" step="1" value="2" required>
                     </fieldset>
                     <button type="submit">Søk</button>
                 </form>
@@ -152,7 +152,7 @@
                             <legend>Meld deg på nyhetsbrev her</legend>
                             <form action="" method="POST">
                             <div class="sign-up">
-                                <input type="email" placeholder="ola@example.com..."/>
+                                <input type="email"maxlength="50" placeholder="ola@example.com..." required/>
                                 <input type="submit" value="Send"/>
                             </div>
                             </form>
