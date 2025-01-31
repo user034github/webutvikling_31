@@ -25,6 +25,19 @@ main {
     align-self: center;
 }
 
+main .button {
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+main .button i.fa-solid {
+    font-size: 1.2em;
+    padding-left: 0.2em;
+}
+
 .progress-bar {
     display: flex;
     background-color: #1ca2c1;
@@ -41,6 +54,96 @@ main {
 
 .progress-bar i.fa-solid {
     color: white;
+}
+
+.information-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+.person-1 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background-color: #f6f5f2;
+    border: none;
+}
+
+.person-2 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background-color: #f6f5f2;
+    border: none;
+}
+
+.person-2 input, select {
+    padding: 0.5em;
+}
+
+.person-1 input, select {
+    padding: 0.5em;
+}
+
+.person-2 label {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+
+.person-1 label {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+
+.birthday-div {
+    display: flex;
+    gap: 2em;
+    padding: 1em 0em;
+}
+
+.birthday-div input {
+    flex: 1;
+}
+
+.gender-div {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.person-2 h4 {
+    margin: 0;
+}
+
+.person-2 label:first-of-type {
+    padding-top: 0;
+}
+
+
+.person-1 h4 {
+    margin: 0;
+}
+
+.person-1 label:first-of-type {
+    padding-top: 0;
+}
+
+.information-form #button-next {
+    background-color: #ffcf40;
+    border-color: #ffcf40;
+    border-radius: 0.5em;
+    width: 10em;
+    height: 3.5em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#button-next i.fa-solid {
+    font-size: 1em;
+    padding-left: 0.4em;
 }
 
 h1, h2, h3 {
@@ -209,7 +312,7 @@ fieldset {
         justify-content: space-evenly;
     }    
     .navigation-links li a {
-	    display: block;
+	display: block;
         text-decoration: none;
         color: black;
         font-weight: bold;
@@ -227,7 +330,7 @@ fieldset {
     }
     nav {
         display: block;
-	    justify-content: space-between;
+	justify-content: space-between;
     }
 
     .text-nav {
@@ -235,7 +338,7 @@ fieldset {
     	justify-content: flex-end;
     	list-style-type: none;
     	font-size: 1.5em;
-	    align-items: center;
+	align-items: center;
     	padding: 0;
     }
     .text-nav li a {
@@ -250,7 +353,7 @@ fieldset {
     }
     .text-nav li a {
         color: #027792;
-	    font-weight: bold;
+	font-weight: bold;
         padding: 0.5em;
     }
     .text-nav li a i.fa-regular {

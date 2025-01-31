@@ -37,7 +37,6 @@
             </div>
         </header>
         <main>
-            <p>Lorem ipsum</p>
             <nav class="progress-bar">
                 <a href="">Tillegg</a>
                 <i class="fa-solid fa-angle-right"></i>
@@ -49,15 +48,80 @@
                 <i class="fa-solid fa-angle-right"></i>
                 <a href="">Søk</a>
             </nav>
-            <p class="button">Dine veivalg</p>
+            <p class="button">Dine valg<i class="fa-solid fa-angle-right"></i></p>
             <section class="information-form">
+                <h2>Oppgi dine bestillingsopplysninger</h2>
                 <fieldset class="person-1">
+                    <legend><h4>VOKSEN 18+ HOVEDBESTILLER</h4></legend>
+                    <label for="name">FORNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="name">
 
+                    <label for="surname">ETTERNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="surname">
+                    
+                    <label for="birthday">FØDSELSDATO:</label>
+                    <div class="birthday-div">
+                        <input type="number" id="day" min="1" max="31" placeholder="DD">
+                        <input type="number" id="month" min="1" max="12" placeholder="MM">
+                        <input type="number" id="year" min="1900" max="2025" placeholder="ÅÅÅÅ">
+                    </div>
+
+                    <label for="gender">KJØNN:</label>
+                    <div class="gender-div">
+                        <input type="radio" id="option-1" value="female">
+                        <label for="gender">KVINNE</label>
+                        <input type="radio" id="option-2" value="male">
+                        <label for="gender">MANN</label>
+                    </div>
+
+                    <label for="email">E-POSTADRESSE:</label>
+                    <input type="email" id="email">
+
+                    <label for="phone">TELEFONNUMMER:</label>
+                    <input type="tel" id="phone">
+
+                    <label for="street">GATEADRESSE:</label>
+                    <input type="text" id="street">
+
+                    <label for="postal">POSTNUMMER:</label>
+                    <input type="text" id="postal">
+
+                    <label for="postal">POSTSTED:</label>
+                    <input type="text" id="postal">
+
+                    <label for="country">LAND:</label>
+                    <select id="country">
+                        <option value="country-1">Norge</option>
+                        <option value="country-2">Sverige</option>
+                        <option value="country-3">Danmark</option>
+                        <option value="country-4">Finland</option>
+                        <option value="country-5">Nederland</option>
+                    </select>
                 </fieldset>
                 <fieldset class="person-2">
+                    <legend><h4>VOKSEN 18+</h4></legend>
+                    <label for="name">FORNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="name">
 
+                    <label for="surname">ETTERNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="surname">
+                    
+                    <label for="birthday">FØDSELSDATO:</label>
+                    <div class="birthday-div">
+                        <input type="number" id="day" min="1" max="31" placeholder="DD">
+                        <input type="number" id="month" min="1" max="12" placeholder="MM">
+                        <input type="number" id="year" min="1900" max="2025" placeholder="ÅÅÅÅ">
+                    </div>
+
+                    <label for="gender">KJØNN:</label>
+                    <div class="gender-div">
+                        <input type="radio" id="option-1" value="female">
+                        <label for="gender">KVINNE</label>
+                        <input type="radio" id="option-2" value="male">
+                        <label for="gender">MANN</label>
+                    </div>
                 </fieldset>
-                <input type="submit" value="Siste trinn">
+                <button type="submit" id="button-next">Siste trinn<i class="fa-solid fa-arrow-right"></i></button>
             </section>
             <section class="booking-information">
 
