@@ -33,8 +33,6 @@
                     </ul>
                 </ul>
             </nav>
-            <div class="header-content">
-            </div>
         </header>
         <main>
             <nav id="progress-bar">
@@ -58,72 +56,72 @@
                 <fieldset class="person-1">
                     <legend><h4>VOKSEN 18+ HOVEDBESTILLER</h4></legend>
                     <label for="name">FORNAVN (IFØLGE PASS):</label>
-                    <input type="text" maxlength="20" id="name" required>
+                    <input type="text" maxlength="20" id="name-1" required>
 
                     <label for="surname">ETTERNAVN (IFØLGE PASS):</label>
-                    <input type="text" maxlength="20" id="surname" required>
+                    <input type="text" maxlength="20" id="surname-1" required>
                     
                     <label for="birthday">FØDSELSDATO:</label>
-                    <div class="birthday-div">
-                        <input type="number" id="day" min="1" max="31" placeholder="DD" required>
-                        <input type="number" id="month" min="1" max="12" placeholder="MM" required>
-                        <input type="number" id="year" min="1900" max="2025" placeholder="ÅÅÅÅ" required>
-                    </div>
+                    <section class="birthday-section">
+                        <input type="number" id="day-1" min="1" max="31" placeholder="DD" required>
+                        <input type="number" id="month-1" min="1" max="12" placeholder="MM" required>
+                        <input type="number" id="year-1" min="1900" max="2025" placeholder="ÅÅÅÅ" required>
+                    </section>
 
                     <label for="gender">KJØNN:</label>
-                    <div class="gender-div">
-                        <input type="radio" id="option-1" name="gender-1" value="female" required>
+                    <section class="gender-section">
+                        <input type="radio" id="option-1-1" name="gender-1" value="female" required>
                         <label for="gender">KVINNE</label>
-                        <input type="radio" id="option-2" name="gender-1" value="male" required>
+                        <input type="radio" id="option-2-1" name="gender-1" value="male" required>
                         <label for="gender">MANN</label>
-                    </div>
+                    </section>
 
                     <label for="email">E-POSTADRESSE:</label>
-                    <input type="email" maxlength="50" id="email" required>
+                    <input type="email" maxlength="50" id="email-1" required>
 
                     <label for="phone">TELEFONNUMMER:</label>
-                    <input type="tel" pattern="\d{10}" id="phone" required>
+                    <input type="tel" pattern="\d{10}" id="phone-1" required>
 
                     <label for="street">GATEADRESSE:</label>
-                    <input type="text" maxlength="30" id="street" required>
+                    <input type="text" maxlength="30" id="street-1" required>
 
                     <label for="postal">POSTNUMMER:</label>
-                    <input type="text" maxlength="5" id="postal" required>
+                    <input type="text" maxlength="5" id="postal-1" required>
 
                     <label for="postal">POSTSTED:</label>
-                    <input type="text" maxlength="15" id="postal" required>
+                    <input type="text" maxlength="15" id="postal-1" required>
 
                     <label for="country">LAND:</label>
-                    <select id="country" required>
-                        <option value="country-1">Norge</option>
-                        <option value="country-2">Sverige</option>
-                        <option value="country-3">Danmark</option>
-                        <option value="country-4">Finland</option>
-                        <option value="country-5">Nederland</option>
+                    <select id="country-1" required>
+                        <option value="country-nr-1">Norge</option>
+                        <option value="country-nr-2">Sverige</option>
+                        <option value="country-nr-3">Danmark</option>
+                        <option value="country-nr-4">Finland</option>
+                        <option value="country-nr-5">Nederland</option>
                     </select>
                 </fieldset>
                 <fieldset class="person-2">
                     <legend><h4>VOKSEN 18+</h4></legend>
                     <label for="name">FORNAVN (IFØLGE PASS):</label>
-                    <input type="text" maxlength="20" id="name" required>
+                    <input type="text" maxlength="20" id="name-2" required>
 
                     <label for="surname">ETTERNAVN (IFØLGE PASS):</label>
-                    <input type="text" maxlength="20" id="surname" required>
+                    <input type="text" maxlength="20" id="surname-2" required>
                     
                     <label for="birthday">FØDSELSDATO:</label>
-                    <div class="birthday-div">
-                        <input type="number" id="day" min="1" max="31" placeholder="DD" required>
-                        <input type="number" id="month" min="1" max="12" placeholder="MM" required>
-                        <input type="number" id="year" min="1900" max="2025" placeholder="ÅÅÅÅ" required>
-                    </div>
+                    <section class="birthday-section">
+                        <input type="number" id="day-2" min="1" max="31" placeholder="DD" required>
+                        <input type="number" id="month-2" min="1" max="12" placeholder="MM" required>
+                        <input type="number" id="year-2" min="1900" max="2025" placeholder="ÅÅÅÅ" required>
+                    </section>
 
                     <label for="gender">KJØNN:</label>
-                    <div class="gender-div">
-                        <input type="radio" name="gender-2" id="option-1" value="female" required>
+                    <section class="gender-section">
+                        <input type="radio" name="gender-2" id="option-1-2" value="female" required>
                         <label for="gender">KVINNE</label>
-                        <input type="radio" name="gender-2" id="option-2" value="male" required>
+                        <input type="radio" name="gender-2" id="option-2-2" value="male" required>
                         <label for="gender">MANN</label>
-                    </div>
+                    </section>
                 </fieldset>
                 <button type="submit" id="button-next">Siste trinn<i class="fa-solid fa-arrow-right"></i></button>
             </section>

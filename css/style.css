@@ -99,17 +99,17 @@ main .button i.fa-solid {
     font-weight: bold;
 }
 
-.birthday-div {
+.birthday-section {
     display: flex;
     gap: 2em;
     padding: 1em 0em;
 }
 
-.birthday-div input {
+.birthday-section input {
     flex: 1;
 }
 
-.gender-div {
+.gender-section {
     padding-top: 1em;
     padding-bottom: 1em;
 }
