@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hotellsiden</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/hotellstyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
                 <ul class="logo-menu-nav">
                     <li class="logo"><a href="index.html"><img src="bilder/fav.png"></a></li>
                     <ul class="navigation-links">
-                        <li><a href="index.html#tips-og-inspirasjon">Tips og inspirasjon</a></li>
+                        <li><a href="index.html#article-cards-tips-inspiration">Tips og inspirasjon</a></li>
                         <li><a href="hotell.html">Hotell</a></li>
                         <li><a href="https://www.norwegian.no" target="_blanks">Fly</a></li>
                         <li><a href="#footer">Kontakt</a></li>
@@ -50,11 +50,11 @@
                     <p class="arrow-left"><i class="fa-solid fa-angle-left"></i></p>
                 </div>
             </section>
-            <nav class="overview">
-                <p>Oversikt</p>
-                <p>Fasiliteter</p>
-                <p>Rom</p>
-            </nav>
+            <div id="overview">
+                <a href="hotell.html#overview">Oversikt</a>
+                <a href="hotell.html#facilities">Fasiliteter</a>
+                <a href="hotell.html#choose-room">Rom</a>
+            </div>
         </header>
         <main>
             <section class="review">
@@ -72,7 +72,7 @@
                 </section>
                 <a href="">Se alle anmeldelsene <i class="fa-solid fa-angle-right"></i></a>
             </section>
-            <section class="facilities">
+            <section id="facilities">
                 <h3>Fasiliteter</h3>
                 <p>
                     Parga Beach tilbyr et tilsynelatende uuttømmelig utvalg av sport og aktiviteter 
@@ -105,7 +105,7 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </section>
-            <section class="choose-room">
+            <section id="choose-room">
                 <h3>Velg rom</h3>
                 <article class="article-card-room-1">
                     <img src="bilder/beach-6514331_640.jpg" alt="Strand og fjell bilde">
@@ -169,7 +169,7 @@
                 </article>
             </section>
         </main>
-        <footer>
+        <footer id="footer">
             <section>
                 <ul class="flags">
                     <li><img src="flagg/norway.png">Norge</src></li>
