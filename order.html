@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hotellsiden</title>
+        <title>Bestillingssiden</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,16 +37,20 @@
             </div>
         </header>
         <main>
-            <nav class="progress-bar">
+            <nav id="progress-bar">
+		<a href="order.html#button-next">Bestill</a>
+		<i class="fa-solid fa-angle-right"></i>
+		<a href="order.html">OPPLYSNINGER</a>
+		<i class="fa-solid fa-angle-right"></i>
                 <a href="">Tillegg</a>
                 <i class="fa-solid fa-angle-right"></i>
-                <a href="">Fly</a>
+                <a href="https://www.norwegian.no" target="_blank">Fly</a>
                 <i class="fa-solid fa-angle-right"></i>
-                <a href="">Romtype</a>
+                <a href="hotell.html#choose-room">Romtype</a>
                 <i class="fa-solid fa-angle-right"></i>
-                <a href="">Søkeresultater</a>
+                <a href="hotell.html">Søkeresultater</a>
                 <i class="fa-solid fa-angle-right"></i>
-                <a href="">Søk</a>
+                <a href="index.html#search-form">Søk</a>
             </nav>
             <p class="button">Dine valg<i class="fa-solid fa-angle-right"></i></p>
             <section class="information-form">
@@ -127,7 +131,7 @@
 
             </section>
         </main>
-        <footer>
+        <footer id="footer">
             <section>
                 <ul class="flags">
                     <li><img src="flagg/norway.png">Norge</src></li>
