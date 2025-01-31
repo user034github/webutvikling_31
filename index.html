@@ -23,15 +23,15 @@
                     <li><a href="" class="button">Opprett en konto</a></li>
                     <li><a href="" class="button"><i class="fa-regular fa-circle-user"></i>Min side</a></li>
                 </ul>
-                <ul class="logo-menu-nav">
-                    <li class="logo"><a href="index.html"><img src="bilder/fav.png"></a></li>
+                <section class="logo-menu-nav">
+                    <a href="index.html"><img src="bilder/fav.png" alt="Logo bilde"></a>
                     <ul class="navigation-links">   
                         <li><a href="index.html#article-cards-tips-inspiration">Tips og inspirasjon</a></li>
                         <li><a href="hotell.html">Hotell</a></li>
-                        <li><a href="https://www.norwegian.no" target="_blanks">Fly</a></li>
+                        <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
                         <li><a href="#footer">Kontakt</a></li>
                     </ul>
-                </ul>
+                </section>
             </nav>
             <section class="banner">
                 
@@ -50,7 +50,8 @@
                 <form id="search-form">
                     <fieldset>
                         <legend>Fra</legend>
-                        <select id="til" placeholder="Oslo Lufthavn" required>
+                        <select id="til" required>
+                            <option value="">Velg et avreisested</option>
                             <option value="avreisested-1">Oslo Lufthavn</option>
                             <option value="avreisested-2">Torp Sandefjord Lufthavn</option>
                             <option value="avreisested-3">Bergen Lufthavn</option>
@@ -59,7 +60,8 @@
                     </fieldset>
                     <fieldset>
                         <legend>Fra</legend>
-                        <select id="fra" placeholder="Albania" required>
+                        <select id="fra" required>
+                            <option value="">Velg et destinasjon</option>
                             <option value="destinasjon-1">Albania</option>
                             <option value="destinasjon-2">Danmark</option>
                             <option value="destinasjon-3">Finland</option>
@@ -68,7 +70,8 @@
                     </fieldset>
                     <fieldset>
                         <legend>Reiselengde</legend>
-                        <select id="reiselengde" placeholder="Mindre enn 1 uke" required>
+                        <select id="reiselengde" required>
+                            <option value="">Velg et reiselengde</option>
                             <option value="reiselengde-1">Mindre enn 1 uke</option>
                             <option value="reiselengde-2">1 Uke</option>
                             <option value="reiselengde-3">2 Uker</option>
@@ -77,7 +80,7 @@
                     </fieldset>
                     <fieldset>
                         <legend>Velg dato</legend>
-                        <input type="date" id="velg-dato" min="2025-01-31" placeholder="mm/dd/yyyy" required>
+                        <input type="date" id="velg-dato" min="2025-01-31" required>
                     </fieldset>
                     <fieldset>
                         <legend>Antall reisende</legend>
@@ -127,11 +130,11 @@
         <footer id="footer">
             <section class="flags-section">
                 <ul class="flags">
-                    <li><img src="flagg/norway.png">Norge</src></li>
-                    <li><img src="flagg/sweden.png">Sverige</src></li>
-                    <li><img src="flagg/denmark.png">Danmark</src></li>
-                    <li><img src="flagg/material.png">Finland</src></li>
-                    <li><img src="flagg/netherlands.png">Nederland</src></li>
+                    <li><img src="flagg/norway.png" alt="Norges flagg">Norge</li>
+                    <li><img src="flagg/sweden.png" alt="Sveriges flagg">Sverige</li>
+                    <li><img src="flagg/denmark.png" alt="Danmarks flagg">Danmark</li>
+                    <li><img src="flagg/material.png" alt="Finlands flagg">Finland</li>
+                    <li><img src="flagg/netherlands.png" alt="Nederlands flagg">Nederland</li>
                 </ul>
             </section>
             <div class="footer-screen-size-layer-2">
@@ -150,9 +153,9 @@
                         <h4>NYHETER & TILBUD</h4>
                         <fieldset>
                             <legend>Meld deg på nyhetsbrev her</legend>
-                            <form action="" method="POST">
+                            <form action="#" method="POST">
                             <div class="sign-up">
-                                <input type="email"maxlength="50" placeholder="ola@example.com..." required/>
+                                <input type="email" maxlength="50" placeholder="ola@example.com..." required/>
                                 <input type="submit" value="Send"/>
                             </div>
                             </form>
