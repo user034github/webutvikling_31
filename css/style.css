@@ -50,14 +50,14 @@ nav {
     width: 90%;
 }
 
-.search-form {
+#search-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.9em;
 }
 
-.search-form button {
+#search-form button {
     height: 3.5em;
     width: 100%;
     font-weight: 900;
@@ -68,13 +68,13 @@ nav {
     align-self: flex-end;
 }
 
-.search-form fieldset {
+#search-form fieldset {
     width: 100%;
     box-sizing: border-box;
     padding: 0.5em;
 }
 
-.search-form select, input {
+#search-form select, input {
     width: 100%;
     border: none;
 }
@@ -124,29 +124,29 @@ main {
     max-width: 1000px;
 }
 
-.campaign {
+#campaign {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.campaign img {
+#campaign img {
     width: 100%;
     border-radius: 1em;
 }
 
-.offers {
+#offers {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 1em;
 }
 
-.offers article {
+#offers article {
     border: 1px solid lightgray;
 }
 
-.article-cards-tips-inspiration {
+#article-cards-tips-inspiration {
     display: flex;
     flex-direction: column;
     width: max-content;
@@ -154,12 +154,12 @@ main {
     gap: 1.5em;
 }
 
-.article-cards-tips-inspiration h4 {
+#article-cards-tips-inspiration h4 {
     align-self: flex-start;
     font-size: 2.5em;
 }
 
-.article-cards-tips-inspiration img {
+#article-cards-tips-inspiration img {
     width: 55em;
     border-radius: 1em;
 }
@@ -390,7 +390,7 @@ fieldset {
     .search {
     	height: 5.5em;
     }
-    .search-form {
+    #search-form {
         display: flex;
         flex-direction: row;
         align-items: center;
